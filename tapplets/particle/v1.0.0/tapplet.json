@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Particle",
+  "description": {
+    "summary": "Your trading protocol",
+    "full": "A decentralized leverage trading protocol permissionless for any digital asset. No price oracle, no forced liquidation, no counter party risk."
+  },
+  "logo": "./assets/logo.png",
+  "background": "./assets/background.png",
+  "content-url": "https://example.com/my-object",
+  "checksum": "abc123"
+}

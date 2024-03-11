@@ -1,12 +1,12 @@
 {
   "id": 1,
-  "name": "Example Tapplet",
+  "name": "Tapplet name",
   "description": {
     "summary": "This is a summary of the object",
     "full": "This is a full description of the object"
   },
   "logo": "https://example.com/logo.png",
   "background": "https://example.com/background.png",
-  "url": "https://example.com/my-object",
+  "contect-url": "https://example.com/my-object",
   "checksum": "abc123"
 }
