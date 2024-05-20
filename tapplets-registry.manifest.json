@@ -1,0 +1,34 @@
+{
+  "manifestVersion": "0.1.0",
+  "registeredTapplets": {
+    "@MCozhusheck/tapplet-example": {
+      "id": "@MCozhusheck/tapplet-example",
+      "metadata": {
+        "packageName": "tapplet-example",
+        "displayName": "Demo tapp by MCozhusheck",
+        "author": {
+          "name": "MCozhusheck",
+          "website": "https://github.com/MCozhusheck/tapplet-example"
+        },
+        "about": {
+          "summary": "Short (a few words) summary.",
+          "description": "Longer (a few sentences) project description."
+        },
+        "audits": [
+          {
+            "auditor": "Auditor",
+            "report": "https://auditor-company.io/audits/tapplet-example"
+          }
+        ],
+        "category": "tapplet category",
+        "logo": "https://github.com/MCozhusheck/tapplet-example/blob/master/dist/vite.svg"
+      },
+      "versions": {
+        "0.0.1": {
+          "integrity": "sha512-O56CWu0UvRPMieWp6HBPsQ+8OzDiWMmLUap7tarHLAKdx7vlYXo036OvQjHfpcAD79CRiJzrn4/GGvFlx5yU9w==",
+          "registryUrl": "https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.1.tgz"
+        }
+      }
+    }
+  }
+}
