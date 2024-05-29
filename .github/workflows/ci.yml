@@ -9,9 +9,14 @@ on:
       - develop
 
 jobs:
-  build_and_test:
+  create-pr:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Register tapplet
+        uses: karczuRF/ga-test@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
