@@ -3,13 +3,16 @@ name: Create Pull Request
 on:
   workflow_dispatch:
     inputs:
-      packageName:
+      package-name:
         description: "Tapplet package name"
         required: false
         default: "tapplet-example"
-      manifestVersion:
+      manifest-version:
         description: version
         default: "1.0.0"
+        required: false
+      dir:
+        description: "Optional subfolder directory to save the json file. | src/ "
         required: false
 
   pull_request:
@@ -30,8 +33,9 @@ jobs:
       - name: Register tapplet
         uses: karczuRF/ga-test@main
         with:
-          package-name: tapplet-example
-          manifest-version: 1.0.1
+          package-name: tapp-example
+          manifest-version: 1.0.2
+          dir: ${{ github.workspace }}
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
