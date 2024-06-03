@@ -47,7 +47,7 @@ jobs:
           git config user.email "${{ secrets.EMAIL }}"
           git add -A
           git commit -m "Register tapplet"
-          git pull origin HEAD:feat/tapp-example
+          git pull --ff-only origin HEAD:feat/tapp-example
           git push origin HEAD:feat/tapp-example
 
         env:
