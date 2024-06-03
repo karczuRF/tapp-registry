@@ -34,8 +34,21 @@ jobs:
         uses: karczuRF/ga-test@main
         with:
           package-name: tapp-example
-          manifest-version: 1.0.2
+          manifest-version: 1.0.3
           dir: ${{ github.workspace }}
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit manifest
+        id: push-commit
+        run: |
+          git config user.name "karczuRF"
+          git config user.email "${{ secrets.EMAIL }}"
+          git add -A
+          git commit -m "Register tapplet"
+          git push origin HEAD:feat/tapp-example
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EMAIL: ${{ secrets.EMAIL }}
