@@ -22,6 +22,9 @@ on:
     branches:
       - develop
 
+permissions:
+  contents: write
+
 jobs:
   create-pr:
     runs-on: ubuntu-latest
@@ -45,9 +48,9 @@ jobs:
         run: |
           git config user.name "karczuRF"
           git config user.email "${{ secrets.EMAIL }}"
-          git add.
+          git add -A
           git commit -m "Register tapplet"
-          git push origin feat/tapp-example
+          git push --set-upstream --force origin feat/tapp-example
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
