@@ -45,10 +45,9 @@ jobs:
         run: |
           git config user.name "karczuRF"
           git config user.email "${{ secrets.EMAIL }}"
-          git add -A
+          git add.
           git commit -m "Register tapplet"
-          git merge --no-ff origin HEAD:feat/tapp-example
-          git push origin HEAD:feat/tapp-example
+          git push origin feat/tapp-example
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
