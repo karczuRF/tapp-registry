@@ -37,7 +37,8 @@ jobs:
         uses: karczuRF/ga-test@main
         with:
           package-name: tapp-example
-          manifest-version: 1.0.3
+          package-url: https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.2.tgz
+          manifest-version: 1.0.4
           dir: ${{ github.workspace }}
 
         env:
