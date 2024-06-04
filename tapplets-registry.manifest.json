@@ -1,23 +1,27 @@
 {
-  "manifestVersion": "0.0.1",
+  "manifestVersion": "1.0.0",
   "registeredTapplets": {
-    "@karczuRF/tapplet-example": {
-      "id": "@karczuRF/tapplet-example",
+    "tapp-example": {
+      "id": "tapp-example",
       "metadata": {
-        "displayName": "Tapplet v2.6 human readable name",
+        "displayName": "Tapplet human readable name",
         "author": {
           "name": "karczuRF",
           "website": "https://github.com/karczuRF"
         },
-        "codeowners": ["@karczuRF"],
+        "codeowners": ["karczuRF"],
         "audits": [],
-        "category": "defi",
-        "logoPath": "src/registered-tapplets/@karczuRF/tapplet-example/assets/logo.svg"
+        "category": "test",
+        "logoPath": "src/registered-tapplets/tapp-example/assets/logo.svg"
       },
       "versions": {
-        "0.2.5": {
-          "integrity": "sha512-test123test123test123==",
-          "registryUrl": "https://registry.npmjs.org//@karczuRF/tapplet-example/-/@karczuRF/tapplet-example-0.2.5.tgz"
+        "0.1.0": {
+          "integrity": "sha512-AC2x8xfG93T4QFeKWIb2h7gohc/HzNrqZUbCXOQ54apOPbeSRN/cMSj/iVmIhJ+1NrQJeppSsJjoVVzIYmuOKg==",
+          "registryUrl": "https://registry.npmjs.org//tapp-example/-/tapp-example-0.1.0.tgz"
+        },
+        "1.0.2": {
+          "integrity": "sha512-SdcQQ5fIbmWckZc5hWrjQU5sMsqXW0sO80K0fcTW6scxPhiYJuMt3oO35PNzAIXOTt0CQOGbWNMX+x1Gic/YaA==",
+          "registryUrl": "https://registry.npmjs.org//tapp-example/-/tapp-example-1.0.2.tgz"
         }
       }
     }
