@@ -1,1 +1,25 @@
-{}
+{
+  "manifestVersion": "0.0.1",
+  "registeredTapplets": {
+    "@karczuRF/tapplet-example": {
+      "id": "@karczuRF/tapplet-example",
+      "metadata": {
+        "displayName": "Tapplet v2.6 human readable name",
+        "author": {
+          "name": "karczuRF",
+          "website": "https://github.com/karczuRF"
+        },
+        "codeowners": ["@karczuRF"],
+        "audits": [],
+        "category": "defi",
+        "logoPath": "src/registered-tapplets/@karczuRF/tapplet-example/assets/logo.svg"
+      },
+      "versions": {
+        "0.2.5": {
+          "integrity": "sha512-test123test123test123==",
+          "registryUrl": "https://registry.npmjs.org//@karczuRF/tapplet-example/-/@karczuRF/tapplet-example-0.2.5.tgz"
+        }
+      }
+    }
+  }
+}

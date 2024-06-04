@@ -1,12 +1,32 @@
 name: Create Pull Request
 
 on:
+  workflow_dispatch:
+    inputs:
+      package-name:
+        description: "Tapplet package name"
+        required: false
+        default: "tapplet-example"
+      package-url:
+        description: "Tapplet package https url"
+        required: true
+      manifest-version:
+        description: version
+        default: "1.0.0"
+        required: false
+      dir:
+        description: "Optional subfolder directory to save the json file. | src/ "
+        required: false
+
   pull_request:
     branches:
       - develop
   push:
     branches:
       - develop
+
+permissions:
+  contents: write
 
 jobs:
   create-pr:
@@ -18,5 +38,25 @@ jobs:
 
       - name: Register tapplet
         uses: karczuRF/ga-test@main
+        with:
+          package-name: tapp-example
+          package-url: https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.2.tgz
+          manifest-version: 1.0.4
+          dir: ${{ github.workspace }}
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # TODO
+      # - name: Commit manifest
+      #   id: push-commit
+      #   run: |
+      #     git config user.name "karczuRF"
+      #     git config user.email "${{ secrets.EMAIL }}"
+      #     git add -A
+      #     git commit -m "Register tapplet"
+      #     git push --set-upstream --force origin feat/tapp-example
+
+      # env:
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   EMAIL: ${{ secrets.EMAIL }}
