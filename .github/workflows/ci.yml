@@ -7,6 +7,9 @@ on:
         description: "Tapplet package name"
         required: false
         default: "tapplet-example"
+      package-url:
+        description: "Tapplet package https url"
+        required: true
       manifest-version:
         description: version
         default: "1.0.0"
