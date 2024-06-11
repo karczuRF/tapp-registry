@@ -1,29 +1,16 @@
-name: Create Pull Request
+name: Check the tapplet
 
 on:
   workflow_dispatch:
     inputs:
       package-name:
         description: "Tapplet package name"
-        required: false
-        default: "tapplet-example"
-      package-url:
-        description: "Tapplet package https url"
         required: true
-      manifest-version:
-        description: version
-        default: "1.0.0"
-        required: false
-      dir:
-        description: "Optional subfolder directory to save the json file. | src/ "
-        required: false
+        default: "tapp-example"
 
   pull_request:
     branches:
-      - develop
-  push:
-    branches:
-      - develop
+      - main
 
 permissions:
   contents: write
