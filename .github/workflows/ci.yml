@@ -39,10 +39,7 @@ jobs:
       - name: Register tapplet
         uses: karczuRF/ga-test@main
         with:
-          package-name: tapplet-example
-          package-url: https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.2.tgz
-          manifest-version: 1.0.5
-          dir: ${{ github.workspace }}
+          package-name: tapp-example
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
