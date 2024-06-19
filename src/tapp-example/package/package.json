@@ -1,0 +1,20 @@
+{
+  "name": "tapp-example",
+  "version": "1.0.1",
+  "description": "Tapplet example",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.build.json",
+    "checksum": "npm pack && shasum -b -a 512 ./tapp-example-1.0.1.tgz | awk '{print $1}' | xxd -r -p | base64 && rm ./tapp-example-1.0.1.tgz"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karczuRF/tapp-example.git"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
