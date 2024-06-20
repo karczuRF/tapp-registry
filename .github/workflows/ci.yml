@@ -7,6 +7,10 @@ on:
         description: "Tapplet package name"
         required: true
         default: "tapp-example"
+      package-version:
+        description: "The tapplet package version"
+        required: true
+        default: "1.0.0"
 
   pull_request:
     branches:
@@ -16,8 +20,24 @@ permissions:
   contents: write
 
 jobs:
-  create-pr:
+  read-variables:
     runs-on: ubuntu-latest
+    outputs:
+      name: ${{ steps.var-setup.outputs.name }}
+      version: ${{ steps.var-setup.outputs.version }}
+    steps:
+      - name: Variables setup
+        id: var-setup
+        shell: bash
+        run: |
+          ref_name=${{ github.ref_name }}
+          IFS="-" read -r NAME VERSION <<< "$ref_name"
+          echo "name=${NAME}" >> $GITHUB_OUTPUT
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+
+  check-tapp:
+    runs-on: ubuntu-latest
+    needs: read-variables
 
     steps:
       - name: Checkout repository
@@ -26,12 +46,12 @@ jobs:
       - name: Register tapplet
         uses: karczuRF/ga-test@main
         with:
-          package-name: tapp-example
+          package-name: ${{needs.read-variables.outputs.name}}
+          package-version: ${{needs.read-variables.outputs.version}}
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # TODO
       - name: Commit manifest
         id: push-commit
         run: |
@@ -41,7 +61,7 @@ jobs:
           git commit -m "Register tapplet"
           git fetch origin
           git rebase --strategy-option=theirs origin/main
-          git push origin HEAD:tapp/tapp-example-1.0.1 --force
+          git push origin HEAD:${{github.ref_name}} --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EMAIL: ${{ secrets.EMAIL }}
