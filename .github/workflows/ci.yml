@@ -52,7 +52,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit manifest
+  update-registry:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Commit updated files
         id: push-commit
         run: |
           git config user.name "karczuRF"
