@@ -49,35 +49,10 @@ jobs:
 
       - name: Register tapplet
         id: tapp-register
-        uses: karczuRF/ga-test@refactor/tapp-reg-manifest-bump
+        uses: karczuRF/ga-test@main
         with:
           package-name: ${{needs.read-variables.outputs.name}}
           package-version: ${{needs.read-variables.outputs.version}}
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # update-registry:
-  #   runs-on: ubuntu-latest
-  #   needs: check-tapp
-
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v4
-
-  #     - name: Commit updated files
-  #       id: push-commit
-  #       run: |
-  #         if [ ${{ needs.check-tapp.outputs.status }} ]; then
-  #           git config user.name "${{ github.actor }}"
-  #           git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
-  #           git add -A
-  #           git commit -m "Register tapplet"
-  #           git fetch origin
-  #           git rebase --strategy-option=theirs origin/main
-  #           git push --force
-  #         fi
-
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #         EMAIL: ${{ secrets.EMAIL }}
