@@ -26,17 +26,21 @@ jobs:
     outputs:
       name: ${{ steps.var-setup.outputs.name }}
       version: ${{ steps.var-setup.outputs.version }}
+      param: ${{ steps.var-setup.outputs.param }}
     steps:
       - name: Variables setup
         id: var-setup
         shell: bash
         run: |
           pr_name=${{ github.event.pull_request.title }}
-          IFS="@" read -r NAME VERSION <<< "$pr_name"
+          IFS="@" read -r NAME VERSION_PARAM <<< "$pr_name"
+          IFS="-" read -r VERSION PARAM <<< "$VERSION_PARAM"
           echo "Name: $NAME"
           echo "Version: $VERSION"
+          echo "Param: $PARAM"
           echo "name=${NAME}" >> $GITHUB_OUTPUT
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "version=${PARAM}" >> $GITHUB_OUTPUT
 
   check-tapp:
     runs-on: ubuntu-latest
