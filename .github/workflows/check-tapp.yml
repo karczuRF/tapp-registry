@@ -40,7 +40,7 @@ jobs:
           echo "Param: $PARAM"
           echo "name=${NAME}" >> $GITHUB_OUTPUT
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "version=${PARAM}" >> $GITHUB_OUTPUT
+          echo "param=${PARAM}" >> $GITHUB_OUTPUT
 
   check-tapp:
     runs-on: ubuntu-latest
