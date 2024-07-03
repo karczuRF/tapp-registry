@@ -24,23 +24,23 @@ jobs:
   get-tapp-id:
     runs-on: ubuntu-latest
     outputs:
+      prefix: ${{ steps.var-setup.outputs.prefix }}
       name: ${{ steps.var-setup.outputs.name }}
       version: ${{ steps.var-setup.outputs.version }}
-      param: ${{ steps.var-setup.outputs.param }}
     steps:
       - name: Variables setup
         id: var-setup
         shell: bash
         run: |
           pr_name=${{ github.event.pull_request.title }}
-          IFS="@" read -r NAME VERSION_PARAM <<< "$pr_name"
-          IFS="-" read -r VERSION PARAM <<< "$VERSION_PARAM"
+          IFS=" " read -r PREFIX NAME_VERSION <<< "$pr_name"
+          IFS="@" read -r NAME VERSION <<< "$NAME_VERSION"
+          echo "Prefix: $PREFIX"
           echo "Name: $NAME"
           echo "Version: $VERSION"
-          echo "Param: $PARAM"
+          echo "prefix=${PREFIX}" >> $GITHUB_OUTPUT
           echo "name=${NAME}" >> $GITHUB_OUTPUT
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "param=${PARAM}" >> $GITHUB_OUTPUT
 
   check-tapp:
     runs-on: ubuntu-latest
@@ -54,6 +54,7 @@ jobs:
 
       - name: Check tapplet package
         id: tapp-checker
+        if: needs.get-tapp-id.outputs.prefix == 'Add'
         uses: karczuRF/ga-test@main
         with:
           package-name: ${{needs.get-tapp-id.outputs.name}}
