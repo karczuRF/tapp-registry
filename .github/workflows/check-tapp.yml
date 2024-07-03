@@ -33,7 +33,7 @@ jobs:
         shell: bash
         run: |
           pr_name=${{ github.event.pull_request.title }}
-          IFS=" " read -r PREFIX NAME_VERSION <<< "$pr_name"
+          IFS="/" read -r PREFIX NAME_VERSION <<< "$pr_name"
           IFS="@" read -r NAME VERSION <<< "$NAME_VERSION"
           echo "Prefix: $PREFIX"
           echo "Name: $NAME"
