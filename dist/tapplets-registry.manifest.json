@@ -83,7 +83,33 @@
           "registryUrl": "https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.2.tgz"
         }
       }
+    },
+    "faucet-tapplet": {
+      "id": "faucet-tapplet",
+      "metadata": {
+        "displayName": "Faucet tapplet",
+        "logoUrl": "src/images/logo.svg",
+        "backgroundUrl": "src/images/background.svg",
+        "author": {
+          "name": "MCozhusheck",
+          "website": "https://api.github.com/users/MCozhusheck/repos"
+        },
+        "about": {
+          "summary": "Faucet testing",
+          "description": "This is the simplest example of a faucet tapplet for testing purposes."
+        },
+        "codeowners": [
+          "@MCozhusheck"
+        ],
+        "category": "TEST"
+      },
+      "versions": {
+        "0.0.1": {
+          "integrity": "sha512-lVMTjcpCz0ENSkqn0dbbmJ6E2PbUoIpvjDjj0tVA7zN4QjWCBZIcok55NuCiJQaAg5BqJzPqsvhhEEP8TIQ0Fw==",
+          "registryUrl": "https://registry.npmjs.org/faucet-tapplet/-/faucet-tapplet-0.0.1.tgz"
+        }
+      }
     }
   },
-  "manifestVersion": "1.0.20"
+  "manifestVersion": "1.0.21"
 }

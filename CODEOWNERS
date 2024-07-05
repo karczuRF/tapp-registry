@@ -3,3 +3,4 @@
 CODEOWNERS       @tari-project/devops
 tapp-example/    @karczuRF
 tapplet-example/ @MCozhusheck
+faucet-tapplet/  @MCozhusheck
