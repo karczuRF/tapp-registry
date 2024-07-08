@@ -96,6 +96,10 @@
         "1.0.9": {
           "integrity": "sha512-UxBBr2g338GLnU/hJkhe0dF0D7zxx65/k+nhBT3nqbKcnTyrfS8vbNilQMrvH2GxnV3aH1P05S72GujyIqo8ng==",
           "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.9.tgz"
+        },
+        "1.0.12": {
+          "integrity": "sha512-ZzfqLRdSuKjLhUHl4rlSa/XJPrlu8ICEFU6f/VYqqvIWQxOg02ddxlpzpF4eH/bq6WRkhc8f08YFyFlVMCeDxg==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.12.tgz"
         }
       }
     },
@@ -131,5 +135,5 @@
       }
     }
   },
-  "manifestVersion": "1.1.2"
+  "manifestVersion": "1.1.3"
 }
