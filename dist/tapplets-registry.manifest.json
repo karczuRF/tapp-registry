@@ -14,9 +14,8 @@
           "summary": "Faucet testing",
           "description": "This is the simplest example of a faucet tapplet for testing purposes."
         },
-        "codeowners": [
-          "@MCozhusheck"
-        ],
+        "codeowners": ["@MCozhusheck"],
+        "audits": [],
         "category": "TEST"
       },
       "versions": {
@@ -40,9 +39,7 @@
           "summary": "Demo",
           "description": "This is the simplest example of a tapplet."
         },
-        "codeowners": [
-          "@karczuRF"
-        ],
+        "codeowners": ["@karczuRF"],
         "audits": [
           {
             "auditor": "Auditor",
@@ -112,9 +109,8 @@
           "summary": "Demo",
           "description": "This is the simplest example of a tapplet."
         },
-        "codeowners": [
-          "@MCozhusheck"
-        ],
+        "codeowners": ["@MCozhusheck"],
+        "audits": [],
         "category": "test"
       },
       "versions": {
