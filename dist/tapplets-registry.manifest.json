@@ -1,4 +1,133 @@
 {
-  "registeredTapplets": {},
-  "manifestVersion": "1.1.0"
+  "registeredTapplets": {
+    "faucet-tapplet": {
+      "id": "faucet-tapplet",
+      "metadata": {
+        "displayName": "Faucet tapplet",
+        "logoUrl": "src/images/logo.svg",
+        "backgroundUrl": "src/images/background.svg",
+        "author": {
+          "name": "MCozhusheck",
+          "website": "https://api.github.com/users/MCozhusheck/repos"
+        },
+        "about": {
+          "summary": "Faucet testing",
+          "description": "This is the simplest example of a faucet tapplet for testing purposes."
+        },
+        "codeowners": [
+          "@MCozhusheck"
+        ],
+        "category": "TEST"
+      },
+      "versions": {
+        "0.0.1": {
+          "integrity": "sha512-lVMTjcpCz0ENSkqn0dbbmJ6E2PbUoIpvjDjj0tVA7zN4QjWCBZIcok55NuCiJQaAg5BqJzPqsvhhEEP8TIQ0Fw==",
+          "registryUrl": "https://registry.npmjs.org/faucet-tapplet/-/faucet-tapplet-0.0.1.tgz"
+        }
+      }
+    },
+    "tapp-example": {
+      "id": "tapp-example",
+      "metadata": {
+        "displayName": "Tapplet human readable name",
+        "logoUrl": "./dist/images/logo.svg",
+        "backgroundUrl": "./dist/images/background.svg",
+        "author": {
+          "name": "karczuRF",
+          "website": "https://github.com/karczuRF"
+        },
+        "about": {
+          "summary": "Demo",
+          "description": "This is the simplest example of a tapplet."
+        },
+        "codeowners": [
+          "@karczuRF"
+        ],
+        "audits": [
+          {
+            "auditor": "Auditor",
+            "report": "https://auditor-company.io/audits/tapplet-name"
+          }
+        ],
+        "category": "test"
+      },
+      "versions": {
+        "1.0.0": {
+          "integrity": "",
+          "registryUrl": ""
+        },
+        "1.0.1": {
+          "integrity": "sha512-AC2x8xfG93T4QFeKWIb2h7gohc/HzNrqZUbCXOQ54apOPbeSRN/cMSj/iVmIhJ+1NrQJeppSsJjoVVzIYmuOKg==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.1.tgz"
+        },
+        "1.0.10": {
+          "integrity": "sha512-fpoqy7rPWmRDe7k2RQPrVuFbSFG7u113hwCekaoG5ptSDsUnW80/EeuinmXV+IBekhAhGyff0FcYVERgYK2GZw==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.10.tgz"
+        },
+        "1.0.11": {
+          "integrity": "sha512-qwJESPEK2v//Hmowf6LNkCAzAjNZfMqyFGXsp+FRo0B+/5kYZVfmd9rgM+UfGtJrYowOba49dOfEMj3NGMxvuw==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.11.tgz"
+        },
+        "1.0.2": {
+          "integrity": "sha512-SdcQQ5fIbmWckZc5hWrjQU5sMsqXW0sO80K0fcTW6scxPhiYJuMt3oO35PNzAIXOTt0CQOGbWNMX+x1Gic/YaA==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.2.tgz"
+        },
+        "1.0.3": {
+          "integrity": "sha512-fxqEm3FBsH3io1RGkxsXNIOtMs6UGTORAP21/uMn+oAwS+4+rkXfQj5XRnVKzFXBSSgbaDZY6bohx7UfoAnC2A==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.3.tgz"
+        },
+        "1.0.4": {
+          "integrity": "sha512-+iRRfXaBW7e76nwC5Tlp7ZZwmJ60EMSqZmbKi0oMtn2FNHmS8rYZI7196ziBqTiKWxSOtOkLHYl1vhuvMJgPZA==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.4.tgz"
+        },
+        "1.0.5": {
+          "integrity": "sha512-SPeIbJy0UPEZL8JfrsiG5olUZ7KcOlSBCGuhlNKPsjz3v+FdK26bUFFbx10pGQwuIU+Q7HFoqDLE62KcpCFViw==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.5.tgz"
+        },
+        "1.0.6": {
+          "integrity": "sha512-+8cX71Ij1jtZ506p+Duz6Y+RPHFXPqHvWtwRb4zKh/kurA3BhFxYpK7gl7F6IFHNjaEPVao4R7p/+J/1MZlcdw==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.6.tgz"
+        },
+        "1.0.8": {
+          "integrity": "sha512-H+yasyPoPBDA0ejGzNspRyYrPTJSk+HHZe4m5/CRqLc+AteQE22ixZ5x/cgtzK2yQQJv3bW7kKY6u2+AOulDDg==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.8.tgz"
+        },
+        "1.0.9": {
+          "integrity": "sha512-UxBBr2g338GLnU/hJkhe0dF0D7zxx65/k+nhBT3nqbKcnTyrfS8vbNilQMrvH2GxnV3aH1P05S72GujyIqo8ng==",
+          "registryUrl": "https://registry.npmjs.org/tapp-example/-/tapp-example-1.0.9.tgz"
+        }
+      }
+    },
+    "tapplet-example": {
+      "id": "tapplet-example",
+      "metadata": {
+        "displayName": "Tapplet human readable name",
+        "logoUrl": "./dist/images/logo.svg",
+        "backgroundUrl": "./dist/images/logo.svg",
+        "author": {
+          "name": "MCozhusheck",
+          "website": "https://github.com/MCozhusheck"
+        },
+        "about": {
+          "summary": "Demo",
+          "description": "This is the simplest example of a tapplet."
+        },
+        "codeowners": [
+          "@MCozhusheck"
+        ],
+        "category": "test"
+      },
+      "versions": {
+        "0.0.1": {
+          "integrity": "sha512-ivQM1oWaCaZrHARDCD2rib/RFmNDdSDuCQofOsEc3HLo/zgGjLXiySwm/uu3s/5lt9S+/oPC6wFE3m5agzdizA==",
+          "registryUrl": "https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.2.tgz"
+        },
+        "0.0.2": {
+          "integrity": "sha512-ivQM1oWaCaZrHARDCD2rib/RFmNDdSDuCQofOsEc3HLo/zgGjLXiySwm/uu3s/5lt9S+/oPC6wFE3m5agzdizA==",
+          "registryUrl": "https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.2.tgz"
+        }
+      }
+    }
+  },
+  "manifestVersion": "1.1.1"
 }
