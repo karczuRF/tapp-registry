@@ -133,7 +133,33 @@
           "registryUrl": "https://registry.npmjs.org/tapplet-example/-/tapplet-example-0.0.2.tgz"
         }
       }
+    },
+    "tariswap-tapplet": {
+      "id": "tariswap-tapplet",
+      "metadata": {
+        "displayName": "TariSwap tapplet for testing",
+        "logoUrl": "src/images/logo.svg",
+        "backgroundUrl": "src/images/background.svg",
+        "author": {
+          "name": "MCozhusheck",
+          "website": "https://api.github.com/users/MCozhusheck/repos"
+        },
+        "about": {
+          "summary": "TariSwap",
+          "description": "This is the simple example of a tariswap tapplet for testing purposes."
+        },
+        "codeowners": [
+          "@MCozhusheck"
+        ],
+        "category": "TEST"
+      },
+      "versions": {
+        "0.0.1": {
+          "integrity": "sha512-qWtb4RVVRlFPon8AwWYHYTq4fIXZBOsm36zLiU5tgaaQ9Crtrb1oMAWtZ7riIUT7MokU5J++QcOFRfwKtjEzRg==",
+          "registryUrl": "https://registry.npmjs.org/tariswap-tapplet/-/tariswap-tapplet-0.0.1.tgz"
+        }
+      }
     }
   },
-  "manifestVersion": "1.1.3"
+  "manifestVersion": "1.1.4"
 }
