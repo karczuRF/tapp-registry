@@ -157,9 +157,13 @@
         "0.0.1": {
           "integrity": "sha512-qWtb4RVVRlFPon8AwWYHYTq4fIXZBOsm36zLiU5tgaaQ9Crtrb1oMAWtZ7riIUT7MokU5J++QcOFRfwKtjEzRg==",
           "registryUrl": "https://registry.npmjs.org/tariswap-tapplet/-/tariswap-tapplet-0.0.1.tgz"
+        },
+        "0.0.2": {
+          "integrity": "sha512-40N4MpHm9lF5XGly/6Ef99y1JbJF+2y/TmAq3fkMsItpXgBljE/HO34GM5U4HPL9BuVNZ4uHgTrsHF8AqsAmNw==",
+          "registryUrl": "https://registry.npmjs.org/tariswap-tapplet/-/tariswap-tapplet-0.0.2.tgz"
         }
       }
     }
   },
-  "manifestVersion": "1.1.4"
+  "manifestVersion": "1.1.5"
 }
