@@ -28,6 +28,10 @@
         "0.0.2": {
           "integrity": "sha512-mHdnFFRehDqKLPKfBigrsId1Bm25d1HjE/sb3Ji+NW/sJ5EC+kjP8+ohW6PfbX5+Va8tR/aClegyPMsrKdWdyg==",
           "registryUrl": "https://registry.npmjs.org/faucet-tapplet/-/faucet-tapplet-0.0.2.tgz"
+        },
+        "0.0.3": {
+          "integrity": "sha512-M7Te3u4pQfEQoSDk+sDyMXlp89M6uVcgmap7mqf/lrDRs1ltA7uvbsE3b0jZGuzFAh7XSbtgFAT4YJZhZRbBBA==",
+          "registryUrl": "https://registry.npmjs.org/faucet-tapplet/-/faucet-tapplet-0.0.3.tgz"
         }
       }
     },
@@ -169,5 +173,5 @@
       }
     }
   },
-  "manifestVersion": "1.1.6"
+  "manifestVersion": "1.1.7"
 }
