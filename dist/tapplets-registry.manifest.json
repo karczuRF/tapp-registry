@@ -183,7 +183,39 @@
           "registryUrl": "https://registry.npmjs.org/tariswap-tapplet/-/tariswap-tapplet-0.0.2.tgz"
         }
       }
+    },
+    "tarifaucet-tapplet": {
+      "id": "tarifaucet-tapplet",
+      "metadata": {
+        "displayName": "Tari Faucet",
+        "logoUrl": "src/images/logo.svg",
+        "backgroundUrl": "src/images/background.svg",
+        "author": {
+          "name": "karczuRF",
+          "website": "https://api.github.com/users/karczuRF/repos"
+        },
+        "about": {
+          "summary": "Fee Faucet",
+          "description": "Get free coins from the Tari Faucet"
+        },
+        "codeowners": [
+          "@karczuRF"
+        ],
+        "audits": [
+          {
+            "auditor": "",
+            "reportUrl": ""
+          }
+        ],
+        "category": "TEST"
+      },
+      "versions": {
+        "1.0.0": {
+          "integrity": "sha512-GRcBMW5XBue43XDGdRj0Tm3F6qcR7QSkk9VZrmtTYtZUoaCgAGcd3TY7knP2ET+lMp5B6HVG5nVLP8nyNfRYaA==",
+          "registryUrl": "https://registry.npmjs.org/tarifaucet-tapplet/-/tarifaucet-tapplet-1.0.0.tgz"
+        }
+      }
     }
   },
-  "manifestVersion": "1.1.10"
+  "manifestVersion": "1.1.11"
 }

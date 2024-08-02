@@ -1,7 +1,8 @@
 # CI/CD-related files require a review by the devops team
-.github/**/*      @tari-project/devops
-CODEOWNERS        @tari-project/devops
-tapp-example/     @karczuRF
-tapplet-example/  @MCozhusheck
-faucet-tapplet/   @MCozhusheck
-tariswap-tapplet/ @MCozhusheck
+.github/**/*        @tari-project/devops
+CODEOWNERS          @tari-project/devops
+tapp-example/       @karczuRF
+tapplet-example/    @MCozhusheck
+faucet-tapplet/     @MCozhusheck
+tariswap-tapplet/   @MCozhusheck
+tarifaucet-tapplet/ @karczuRF
