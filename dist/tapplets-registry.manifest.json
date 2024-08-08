@@ -213,9 +213,13 @@
         "1.0.0": {
           "integrity": "sha512-GRcBMW5XBue43XDGdRj0Tm3F6qcR7QSkk9VZrmtTYtZUoaCgAGcd3TY7knP2ET+lMp5B6HVG5nVLP8nyNfRYaA==",
           "registryUrl": "https://registry.npmjs.org/tarifaucet-tapplet/-/tarifaucet-tapplet-1.0.0.tgz"
+        },
+        "1.0.1": {
+          "integrity": "sha512-pgxT9HP63i2KEXGD7SmFddcpAr5hnEPXLf4XHY/POku3GoJRa47caLdXeguXoG9wqcTmXqa6+mdGyR69vtdPGQ==",
+          "registryUrl": "https://registry.npmjs.org/tarifaucet-tapplet/-/tarifaucet-tapplet-1.0.1.tgz"
         }
       }
     }
   },
-  "manifestVersion": "1.1.11"
+  "manifestVersion": "1.1.12"
 }
