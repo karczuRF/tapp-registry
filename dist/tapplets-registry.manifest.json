@@ -227,7 +227,39 @@
           "registryUrl": "https://registry.npmjs.org/tarifaucet-tapplet/-/tarifaucet-tapplet-1.0.3.tgz"
         }
       }
+    },
+    "tex-tapplet": {
+      "id": "tex-tapplet",
+      "metadata": {
+        "displayName": "TEX",
+        "logoUrl": "src/images/logo.svg",
+        "backgroundUrl": "src/images/background.svg",
+        "author": {
+          "name": "karczuRF",
+          "website": "https://api.github.com/users/karczuRF/repos"
+        },
+        "about": {
+          "summary": "TEX Tapplet",
+          "description": "TariEXchange Tapplet"
+        },
+        "codeowners": [
+          "@karczuRF"
+        ],
+        "audits": [
+          {
+            "auditor": "",
+            "reportUrl": ""
+          }
+        ],
+        "category": "TEST"
+      },
+      "versions": {
+        "1.0.3": {
+          "integrity": "sha512-H3Ntq7Sus1hNOUwVtUUOEO+jbHHIyej0UTCRE925lAimAjv0LG9UijLYPdYscFdtOz928LsPDAcpYQ68yg0Bbw==",
+          "registryUrl": "https://registry.npmjs.org/tex-tapplet/-/tex-tapplet-1.0.3.tgz"
+        }
+      }
     }
   },
-  "manifestVersion": "1.1.14"
+  "manifestVersion": "1.1.15"
 }
