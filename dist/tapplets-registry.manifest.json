@@ -67,7 +67,7 @@
         "audits": [
           {
             "auditor": "Auditor",
-            "report": "https://auditor-company.io/audits/tapplet-name"
+            "reportUrl": "https://auditor-company.io/audits/tapplet-name"
           }
         ],
         "category": "test"
