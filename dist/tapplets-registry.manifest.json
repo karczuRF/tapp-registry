@@ -257,9 +257,13 @@
         "1.0.3": {
           "integrity": "sha512-H3Ntq7Sus1hNOUwVtUUOEO+jbHHIyej0UTCRE925lAimAjv0LG9UijLYPdYscFdtOz928LsPDAcpYQ68yg0Bbw==",
           "registryUrl": "https://registry.npmjs.org/tex-tapplet/-/tex-tapplet-1.0.3.tgz"
+        },
+        "1.1.0": {
+          "integrity": "sha512-l3xHeakdGO6v38qDi++Bqa5v0pYJ3xdzPp04QuxjFH7mcwdPZUIKmqU2jkIK5VGbQbF9K/mrGfSpE4OLdLU8tg==",
+          "registryUrl": "https://registry.npmjs.org/tex-tapplet/-/tex-tapplet-1.1.0.tgz"
         }
       }
     }
   },
-  "manifestVersion": "1.1.16"
+  "manifestVersion": "1.1.17"
 }
